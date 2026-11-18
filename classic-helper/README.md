@@ -6,6 +6,12 @@ Controles de toque experimentais para o [Minecraft Classic oficial](https://clas
 
 No navegador remoto de desktop, o arquivo bookmarklet foi acionado como link javascript na página oficial e os botões apareceram; movimento e câmera alteraram a posição e a orientação no jogo, e Bloco + alterou o item selecionado. Uma versão anterior equivalente dos controles também foi testada no navegador remoto: pulo, quebra e colocação de bloco. A execução como favorito no Chrome Android e o multitouch em celular físico NÃO foram testados. A tela inicial, o inventário, os menus e compatibilidade com mudanças futuras no jogo não foram validados em Android. Isto é um experimento, não garantia de jogo funcional no telefone.
 
+## Página de configuração
+
+Use https://kasulajunio.github.io/TOQI-LAB/classic-helper/ para copiar o favorito, ver o passo a passo e testar eventos de toque nesta página (não no jogo). O código legível está em [helper.js](helper.js); o favorito autônomo gerado em [bookmarklet.txt](bookmarklet.txt). A página não ativa nada automaticamente: o favorito precisa ser executado na aba do jogo depois de o mundo carregar.
+
+A revisão acrescenta posicionamento explícito ao grupo superior, rótulos de acessibilidade, layout compacto em telas baixas e solta teclas ao sair ou ocultar a aba. Os eventos continuam sintéticos; não confundir os testes em navegador remoto com teste em um Android físico.
+
 ## Como tentar no Chrome Android, sem instalar aplicativo
 
 1. Abra [bookmarklet.txt](bookmarklet.txt) no GitHub e copie a linha inteira, incluindo `javascript:`. Confira que o endereço do arquivo é do repositório `kasulajunio/TOQI-LAB`. Se a visualização truncar, use Raw e selecione o texto completo.
